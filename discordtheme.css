@@ -944,7 +944,10 @@
   .wordmark_a934d8 > svg {
     display: none;
   }
-  
+  .wordmark_a934d8:after {
+    filter: invert(var(--watermark-filter-invert)) sepia(var(--watermark-filter-sepia)) saturate(var(--watermark-filter-saturate)) hue-rotate(var(--watermark-filter-hue-rotate)) brightness(var(--watermark-filter-brightness)) contrast(var(--watermark-filter-contrast));
+    content: url("https://betterdiscord.app/resources/branding/logo_large.svg");
+  }
   
   .channelName-3KPsGw,
   .subtitle_d8bfb3 {
